@@ -4,6 +4,8 @@ Submitted by: **Mumtaz Fatima**
 
 This web app has probability-themed flashcards. I'm taking a stats course this semester so I thought why not put the fundamental concepts on flashcards. Flashcards are known to help memorize content by spaced repetition and this was one way I could keep coming back to the concepts as I continued developing this app.
 
+Check it out here: https://cp-2-flashcards.vercel.app/
+
 Time spent: **7** hours spent in total
 
 ## Required Features
