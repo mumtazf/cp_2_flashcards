@@ -21,7 +21,7 @@ function App() {
   }
 
   const decreaseCount = () => {
-    if(count>2)
+    if(count>=1)
       setCount(count-1);
   }
 
