@@ -18,11 +18,20 @@ function App() {
   const updateCount = () => {
     if(count < 9)
       setCount(count+1);
+    
+      //changes back to questions so that users cannot see the answer when they move to the next card
+    if(flippedCard)
+      setCardState(!flippedCard);
+    
   }
 
   const decreaseCount = () => {
     if(count>=1)
       setCount(count-1);
+
+      //changes back to questions so that users cannot see the answer when they move to the next card
+    if(flippedCard)
+      setCardState(!flippedCard);
   }
 
   const [cardColor, setCardColor] = useState("blue");
