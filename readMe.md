@@ -27,7 +27,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] The site does not break when the user clicks the buttons beyond the limit of cards present.
-* 
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
