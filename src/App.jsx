@@ -3,14 +3,16 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import FrontCard from "./components/FrontCard.jsx"
 import BackCard  from './components/BackCard'
+import FormElement from './components/FormElement.jsx'
 
 function App() {
   const [count, setCount] = useState(0);
   const [flippedCard, setCardState] = useState(false);
+  //const[inputValidate,setInputValidate] = useState(false);
 
   const flipCardFunction = () => {
-    
-    setCardState(!flippedCard);
+   
+      setCardState(!flippedCard);
    
   }
 
@@ -44,6 +46,13 @@ const colorHandler = (newColor)  => {
     setCardColor(newColor);
   }
 
+
+// const inputValidator = (validate) => {
+//   setInputValidate(validate);
+//   console.log("in put validator");
+//   console.log(validate);
+// }
+
 const containerClass = `cardDisplay ${cardColor}`;
 
   return (
@@ -57,6 +66,9 @@ const containerClass = `cardDisplay ${cardColor}`;
             <div className = {containerClass}  onClick = {flipCardFunction} >  
               {flippedCard? <BackCard index = {count} onColorChange = {colorHandler}/> : <FrontCard index = {count} onColorChange = {colorHandler}/>}    
             </div>
+          </div>
+          <div> 
+            <FormElement index = {count}/> 
           </div>
           <div>
           <button onClick = {decreaseCount}>⬅️</button>

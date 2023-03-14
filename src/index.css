@@ -125,3 +125,26 @@ button:focus-visible {
   background:rgb(43, 159, 97);
 } 
 
+#correct{
+  border-color: green;
+  border-style: double;
+  height: 2em;
+  width: 20em;
+  border-width: 2em;
+}
+
+#wrong{
+  border-color: red;
+  border-width: 2em;
+  border-style: double;
+  height: 2em;
+  width: 20em;
+}
+
+.formElement{
+  display: flex;
+  padding: 1em;
+}
+
+input{
+}
